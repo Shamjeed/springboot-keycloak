@@ -8,11 +8,16 @@ public class MainController {
 
    @GetMapping("/")
    public String helloWorld() {
-      return "Hello world !!!"; // + user.getName() ;
+      return "Welcome !!!";
    }
 
-   @GetMapping("/test")
-   public String helloWorldTest() {
-      return "Hello world test"; // + user.getName() ;
+   @GetMapping("/user")
+   public String user() {
+      return "Welcome to user page ";
+   }
+
+   @GetMapping("/admin")
+   public String admin() {
+      return "Welcome to admin page";
    }
 }
